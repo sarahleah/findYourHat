@@ -10,6 +10,7 @@ class Field {
       this.fieldArr = fieldArr;
   }
 
+//TODO -> make this work to print board without commas
   print() {
       for (let item of this.fieldArr) {
           console.log(item);
