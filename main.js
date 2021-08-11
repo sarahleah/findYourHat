@@ -26,4 +26,34 @@ const myField = new Field([
 
 // myField.print();
 
-const move = prompt('Which way?\nw for up\ns for down\nd for right\na for left');
+//get user current position
+  //position = [y[x]]
+let y = 0;
+let x = 0;
+let position = myField.fieldArr[y[x]]
+
+//get user input
+let move = prompt('Which way?\nw for up\ns for down\nd for right\na for left');
+switch (move) {
+    case 'w':
+        //w up
+        y -= 1;
+        break;
+    case 's': 
+        //s down
+        y += 1;
+        break;
+    case 'd': 
+        //d right
+        x += 1;
+        break;
+    case 'a':
+        //a left
+        x -= 1;
+        break;
+}
+//print current field
+position = myField.fieldArr[y[x]];
+//check whether input is out of bounds/on hat/in hole
+//tell user
+
